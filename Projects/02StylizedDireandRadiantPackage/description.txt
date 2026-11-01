@@ -14,6 +14,6 @@ I created this environment with various references in mind, including my primary
 ---
 Blender, Zbrush, Substance Painter, UE5
 ---
-https://i.postimg.cc/W1VtzzRP/Thumbnail02.jpg
+/Images/02StylizedDireandRadiantPackage/Thumbnail02-thumb.webp
 ---
 stylizeddireandradiant.html

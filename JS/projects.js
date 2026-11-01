@@ -1,5 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
     let projects = [];
+    let imageSizes = {}; // "/Images/..." -> [width, height], from Images/sizes.json
+    const IMAGE_PATTERN = /\.(jpeg|jpg|gif|png|webp)$/;
+
+    // A media line is a link, a site path (/Images/...), or a row of them; anything else is a caption
+    const isMediaLine = (line) => line.startsWith('/') || line.includes('http') || line.includes('||') || line.includes('//');
+
+    // Give an image its real size up front, so the page doesn't jump while images load
+    const applySize = (imgElement, url) => {
+        const size = imageSizes[url];
+        if (size) {
+            imgElement.width = size[0];
+            imgElement.height = size[1];
+        }
+        imgElement.decoding = 'async';
+    };
+
+    // loading="lazy" doesn't hold back images inside the scrolling .media-container,
+    // so each image gets its src only when it comes within ~1.5 screens of view
+    const mediaScroller = document.querySelector('.media-container');
+    const scrollerRoot = ['auto', 'scroll'].includes(getComputedStyle(mediaScroller).overflowY) ? mediaScroller : null;
+    const imageObserver = 'IntersectionObserver' in window
+        ? new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.src = entry.target.dataset.src;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { root: scrollerRoot, rootMargin: '1200px 0px' })
+        : null;
+
+    const lazyLoad = (imgElement, url) => {
+        if (imageObserver) {
+            imgElement.dataset.src = url;
+            imageObserver.observe(imgElement);
+        } else {
+            imgElement.src = url;
+        }
+    };
 
     const fetchProjects = async () => {
         try {
@@ -83,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (lines[i].includes(' // ')) {
                     urls = lines[i].split(' // ').map(url => url.trim());
                     // Handle description for `//` case
-                    if (i + 1 < lines.length && !lines[i + 1].includes('http') && !lines[i + 1].includes('||') && !lines[i + 1].includes('//')) {
+                    if (i + 1 < lines.length && !isMediaLine(lines[i + 1])) {
                         description = lines[i + 1];
                         i += 1; // Skip the description line
                     }
@@ -93,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (lines[i].includes('||')) {
                     urls = lines[i].split('||').map(url => url.trim());
                     // Handle description for `||` case
-                    if (i + 1 < lines.length && !lines[i + 1].includes('http') && !lines[i + 1].includes('||') && !lines[i + 1].includes('//')) {
+                    if (i + 1 < lines.length && !isMediaLine(lines[i + 1])) {
                         description = lines[i + 1];
                         i += 1; // Skip the description line
                     }
@@ -104,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Single media case
                     urls = [lines[i].trim()];
                     // Handle description for a single URL
-                    if (i + 1 < lines.length && !lines[i + 1].includes('http') && !lines[i + 1].includes('||') && !lines[i + 1].includes('//')) {
+                    if (i + 1 < lines.length && !isMediaLine(lines[i + 1])) {
                         description = lines[i + 1];
                         i += 1; // Skip the description line
                     }
@@ -131,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.allow = 'autoplay; fullscreen';
         iframe.setAttribute('allowfullscreen', ''); // Ensure allowfullscreen is set correctly
         iframe.title = 'Marmoset Viewer';
+        iframe.loading = 'lazy';
 
         mediaElement.appendChild(iframe);
         return mediaElement;
@@ -139,10 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const createMediaElement = (urls, description) => {
         let mediaElement;
 
-        if (urls.length > 1 && urls[0].match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        if (urls.length > 1 && urls[0].match(IMAGE_PATTERN) != null) {
             // If there are multiple URLs, and they're images, create a multi-image row
             mediaElement = createImageRowElement(urls);
-        } else if (urls[0].match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        } else if (urls[0].match(IMAGE_PATTERN) != null) {
             mediaElement = createSingleImageElement(urls[0]);
         } else if (urls[0].match(/\.(mp4|webm)$/) != null) {
             mediaElement = createVideoElement(urls[0]);
@@ -173,6 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(rowContainer);
     
         const promises = urls.map(url => {
+            const size = imageSizes[url];
+            if (size) return Promise.resolve({ url, aspectRatio: size[0] / size[1] }); // no download needed
             return new Promise((resolve) => {
                 const imgElement = new Image();
                 imgElement.src = url;
@@ -185,10 +227,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
             images.forEach(image => {
                 const imgElement = document.createElement('img');
-                imgElement.src = image.url;
+                lazyLoad(imgElement, image.url);
                 imgElement.alt = 'Project Image';
                 imgElement.loading = 'lazy'; // Optimize loading for large images
                 imgElement.className = 'row-image';
+                applySize(imgElement, image.url);
                 imgElement.style.width = `${(image.aspectRatio / totalAspectRatio) * 100}%`;
                 imgElement.onclick = () => openModal(image.url);
                 rowContainer.appendChild(imgElement);
@@ -229,9 +272,10 @@ document.addEventListener('DOMContentLoaded', () => {
         mediaElement.className = 'media-item';
     
         const imgElement = document.createElement('img');
-        imgElement.src = url;
+        lazyLoad(imgElement, url);
         imgElement.alt = 'Project Image';
         imgElement.loading = 'lazy'; // Optimize loading for large images
+        applySize(imgElement, url);
         mediaElement.appendChild(imgElement);
     
         return mediaElement;
@@ -246,15 +290,17 @@ document.addEventListener('DOMContentLoaded', () => {
         imgContainer.className = 'img-container';
 
         const imgElement1 = document.createElement('img');
-        imgElement1.src = urls[1];
+        lazyLoad(imgElement1, urls[1]);
         imgElement1.loading = 'lazy'; // Optimize loading for large images
         imgElement1.className = 'image-1';
+        applySize(imgElement1, urls[1]);
         imgContainer.appendChild(imgElement1);
 
         const imgElement2 = document.createElement('img');
-        imgElement2.src = urls[0];
+        lazyLoad(imgElement2, urls[0]);
         imgElement2.loading = 'lazy'; // Optimize loading for large images
         imgElement2.className = 'image-2';
+        applySize(imgElement2, urls[0]);
         imgContainer.appendChild(imgElement2);
 
         const sliderContainer = document.createElement('div');
@@ -376,6 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
         iframe.allowFullscreen = true;
         iframe.title = 'YouTube video';
+        iframe.loading = 'lazy';
 
         mediaElement.appendChild(iframe);
         return mediaElement;
@@ -391,6 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.allow = 'autoplay; fullscreen; vr';
         iframe.allowFullscreen = true;
         iframe.title = 'Sketchfab model';
+        iframe.loading = 'lazy';
 
         mediaElement.appendChild(iframe);
         return mediaElement;
@@ -556,6 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('prev-project').addEventListener('click', () => navigateProjects(-1));
         document.getElementById('next-project').addEventListener('click', () => navigateProjects(1));
         await fetchDescription();
+        imageSizes = await fetch('/Images/sizes.json').then(r => (r.ok ? r.json() : {})).catch(() => ({}));
         await loadMedia();
         await fetchStats(); // Fetch and display the stats
     };

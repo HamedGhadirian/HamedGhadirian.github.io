@@ -1,11 +1,11 @@
 
 
-https://i.postimg.cc/hSKmp91V/Sketchbook-01-Page008.jpg
-https://i.postimg.cc/mTyzzPWk/Sketchbook-01-Page007.jpg
-https://i.postimg.cc/rqkRwSb7/Sketchbook-01-Page005.jpg
-https://i.postimg.cc/sybZtFJj/Sketchbook-01-Page006.jpg
-https://i.postimg.cc/b8ZtCYkV/Sketchbook-01-Page004.jpg
-https://i.postimg.cc/9mM7jCSM/Sketchbook-01-Page003.jpg
-https://i.postimg.cc/D7kLbVWj/Sketchbook-01-Page002.jpg
-https://i.postimg.cc/33XpXLmK/Sketchbook-01-Page001.jpg
-https://i.postimg.cc/pWCXSqgf/Sketchbook-01-Page000.jpg
+/Images/Sketchbook/Sketchbook-01-Page008.webp
+/Images/Sketchbook/Sketchbook-01-Page007.webp
+/Images/Sketchbook/Sketchbook-01-Page005.webp
+/Images/Sketchbook/Sketchbook-01-Page006.webp
+/Images/Sketchbook/Sketchbook-01-Page004.webp
+/Images/Sketchbook/Sketchbook-01-Page003.webp
+/Images/Sketchbook/Sketchbook-01-Page002.webp
+/Images/Sketchbook/Sketchbook-01-Page001.webp
+/Images/Sketchbook/Sketchbook-01-Page000.webp

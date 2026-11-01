@@ -19,6 +19,6 @@ The main point of this project was to add some old Persian and Middle Eastern pa
 ---
 Blender, Zbrush, Substance Painter, UE5
 ---
-https://i.postimg.cc/hvN9Q35f/Thumbnail.png
+/Images/03StylizedMiddleEasternWeapons/Thumbnail-thumb.webp
 ---
 stylizedmiddleeasternweapons.html

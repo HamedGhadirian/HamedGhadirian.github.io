@@ -4,6 +4,6 @@ After reading the Echoing Footsteps chapter from A Tale of Two Cities, I felt co
 ---
 Blender, Photoshop
 ---
-https://i.postimg.cc/1tsRwzVq/Echoing-Foot-Steps3.png
+/Images/03ATaleOfTwoCities/Echoing-Foot-Steps3-thumb.webp
 ---
 ataleoftwocities.html

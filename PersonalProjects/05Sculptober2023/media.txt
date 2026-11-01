@@ -1,14 +1,14 @@
 
-https://i.postimg.cc/gJpXKd4b/Day03-Arcane.jpg
+/Images/05Sculptober2023/Day03-Arcane.webp
 Day03-Arcane
-https://i.postimg.cc/6B1rkvTF/Day05-Underwater.jpg
+/Images/05Sculptober2023/Day05-Underwater.webp
 Day05-Underwater
-https://i.postimg.cc/t41xqB7w/Day18-Celestial.png
+/Images/05Sculptober2023/Day18-Celestial.webp
 Day18-Celestial
-https://i.postimg.cc/8Pzv3pG1/Day19-Tangle.png 
+/Images/05Sculptober2023/Day19-Tangle.webp 
 Day19-TAngle
-https://i.postimg.cc/3rBpnyPS/Day27-Folklore.jpg
+/Images/05Sculptober2023/Day27-Folklore.webp
 Day27-Folklore
 
-https://i.postimg.cc/K8dgRtMz/Day01-Potion.jpg || https://i.postimg.cc/PxML3cFp/Day25-Safari.png || https://i.postimg.cc/5NKzWh98/Day26-Gaurdian.png
+/Images/05Sculptober2023/Day01-Potion.webp || /Images/05Sculptober2023/Day25-Safari.webp || /Images/05Sculptober2023/Day26-Gaurdian.webp
 Day01-Potion | Day25-Safari | Day26-Gaurdian

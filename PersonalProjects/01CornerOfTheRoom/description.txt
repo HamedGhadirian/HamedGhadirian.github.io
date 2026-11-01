@@ -4,6 +4,6 @@ This was my first 3D project, where I created all the assets for a student game 
 ---
 Blender, UE5, Substance Painter
 ---
-https://i.postimg.cc/3R10pYPR/Redner-Day-02.png
+/Images/01CornerOfTheRoom/Redner-Day-02-thumb.webp
 ---
 corneroftheroom.html

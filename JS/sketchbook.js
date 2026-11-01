@@ -4,7 +4,9 @@ function createSketchbookThumbnail(src, alt) {
     thumbnailDiv.classList.add("thumbnail");
 
     const thumbnailImg = document.createElement("img");
-    thumbnailImg.src = src;
+    // Small copy for the grid; the full page opens on click
+    thumbnailImg.src = src.replace("/Images/Sketchbook/", "/Images/Sketchbook/thumbs/");
+    thumbnailImg.decoding = "async";
     thumbnailImg.alt = alt;
     thumbnailImg.loading = "lazy"; // Add lazy loading attribute
 

@@ -10,6 +10,7 @@ function createThumbnail(src, alt, galleryPageUrl, hasMultipleImages, hasVideo, 
     thumbnailImg.src = src;
     thumbnailImg.alt = alt;
     thumbnailImg.loading = "lazy"; // Add lazy loading attribute
+    thumbnailImg.decoding = "async";
 
     const thumbnailTitle = document.createElement("div");
     thumbnailTitle.classList.add("thumbnail-title");
@@ -73,7 +74,7 @@ function fetchProjectData(projectName) {
         const galleryPageUrl = descriptionPath.replace('description.txt', htmlFileName);
 
         const mediaLines = mediaText.split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#'));
-        const hasMultipleImages = mediaLines.filter(line => line.match(/\.(jpeg|jpg|gif|png)$/)).length > 1;
+        const hasMultipleImages = mediaLines.filter(line => line.match(/\.(jpeg|jpg|gif|png|webp)$/)).length > 1;
         const hasVideo = mediaLines.some(line => line.match(/\.(mp4)$/));
         const hasYouTube = mediaLines.some(line => line.includes('youtube.com'));
         const hasSketchfab = mediaLines.some(line => line.includes('sketchfab.com'));
