@@ -2,8 +2,8 @@
    Change a value here and every page follows. Every other CSS file uses these names. */
 :root {
   /* Accent: links, highlights, the active tab */
-  --accent: #f5ba13;
-  --accent-hover: #edb049;   /* hover state; set to var(--accent) to use one orange everywhere */
+  --accent: #097C87;
+  --accent-hover: #23CED9;   /* hover state; set to var(--accent) to use one orange everywhere */
 
   /* Dark greys, darkest first */
   --bg: #121212;             /* page background, buttons */
