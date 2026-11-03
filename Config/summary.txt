@@ -1,4 +1,4 @@
-Hi, I'm Hamed, a 3D generalist from Tehran. I studied Computer Science, then fell for art, and now I'm doing an MA in Illustration. So I live somewhere between the two.
+Hi, I'm Hamed, a real-time 3D artist from Tehran. I studied Computer Science, then fell for art, and now I'm doing an MA in Illustration. So I live somewhere between the two.
 
 Most of my 3D work is stylized props and environments. I often sketch an idea before I model it, and sometimes I go the other way: for some of my paintings, I set up the scene in Blender and paint over it. I've sold two asset packs on the Unreal Marketplace: Middle Eastern weapons with Persian patterns, because I wanted my own culture in my work, and a stylized environment inspired by Dota 2. The piece I still love most is a cassette player I designed myself, from a sketch to a short animation.
 
