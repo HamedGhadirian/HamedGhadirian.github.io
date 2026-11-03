@@ -9,8 +9,8 @@ Apr 2024 – Feb 2026
 A real-time 3D app for Android, made in Unreal Engine, that shows your home network and home security as a 3D house. I joined as the 3D artist, and over time I worked on the app's design too.
 I modelled about 80 devices, like phones, laptops and modems, with 226 colour and screen variants. They had to be brand-neutral: easy to recognise, with no real brand or logo, so each one needed its own simple design.
 I also built about 30 rooms that fit together into the app's isometric house. We redesigned the whole house around how the app works, not just how it looks: every room has placement tags, so the developer's system can put each device in the right spot.
-I designed and built the app's whole UI, including 3D data views like a speed test and a Wi-Fi analyzer. Each view went back and forth between me and the programmer. When a design was hard to explain, I made a simple Blueprint prototype to show how it reacts to live values.
-Setting up hundreds of variants by hand was slow, so I made Blueprint editor tools to edit them in bulk. I also made the marketing renders and promo videos, like the one in this picture.
+I redesigned the app for a better user experience and built its whole UI, including 3D data views like a speed test and a Wi-Fi analyzer. Each view went back and forth between me and the programmer. When a design was hard to explain, I made a simple Blueprint prototype to show how it reacts to live values.
+Setting up hundreds of variants by hand was slow, so I made Blueprint editor tools to edit them in bulk and automate splines. I also tested procedural logic in Blueprint to help the developers find solutions. I also made the marketing renders and promo videos, like the one in this picture.
 Link: nepox.com | https://nepox.com/
 Link: Nepox on LinkedIn | https://linkedin.com/company/nepox
 ---
@@ -19,7 +19,7 @@ Unreal Marketplace, now on BlenderKit
 Jul 2023 – Apr 2024
 /Images/Experience/StylizedWeapons.webp
 Two packs I designed, made and sold. They used to be on the Unreal Marketplace; now they're only on BlenderKit. Making them taught me what a buyer needs from a pack: clean setup, clear naming, LODs, collision, and materials they can change.
-Stylized Middle Eastern Weapons: 14 weapons with Persian patterns that I designed and sketched myself. A second UV set lets buyers recolour parts in the engine.
+Stylized Middle Eastern Weapons: 14 weapons with Persian patterns that I designed and sketched myself. A second UV set lets buyers recolour parts in the engine, and some pieces have basic rigging and physics.
 Link: See the weapons | Projects/03StylizedMiddleEasternWeapons/stylizedmiddleeasternweapons.html
 Stylized Dire and Radiant: an environment pack inspired by Dota 2, with 48 meshes, custom collision, LODs and 76 textures.
 Link: See the environment pack | Projects/02StylizedDireandRadiantPackage/stylizeddireandradiant.html
