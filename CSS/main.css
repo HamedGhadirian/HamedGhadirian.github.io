@@ -1,4 +1,5 @@
 /* main.css */
+@import url('theme.css');
 @import url('projectsstyle.css');
 @import url('userinformationstyle.css');
 @import url('tagsstyle.css');

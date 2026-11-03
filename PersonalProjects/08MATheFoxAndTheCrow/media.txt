@@ -1,0 +1,4 @@
+/Images/08MATheFoxAndTheCrow/Fox-And-Crow-Page-01.webp
+The finished page
+/Images/08MATheFoxAndTheCrow/Fox-And-Crow-Page-02.webp || /Images/08MATheFoxAndTheCrow/Fox-And-Crow-Page-03.webp
+The next two pages, not finished

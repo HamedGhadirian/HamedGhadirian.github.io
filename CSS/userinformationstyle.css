@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 /* User Information Styles */
 .user-info-container {
   display: flex;
@@ -20,14 +21,14 @@
 }
 
 .user-name-link:hover {
-  color: #edb049; /* Example hover color */
+  color: var(--accent-hover); /* Example hover color */
 }
 
 .user-info-panel h1 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 5px;
-  color: #edb049;
+  color: var(--accent-hover);
 }
 
 .profile-pic {
@@ -49,13 +50,13 @@
 }
 
 .social-icons a {
-  color: #272727 !important;
+  color: var(--card-3) !important;
   font-size: 24px;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #edb049 !important;;
+  color: var(--accent-hover) !important;
 }
 
 .user-location-container {

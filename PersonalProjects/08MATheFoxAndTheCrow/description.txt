@@ -1,0 +1,13 @@
+MA: The Fox and the Crow
+---
+A page for a children's book of The Fox and the Crow, from my MA in Illustration. I made the snowy forest in 3D first and rendered it. Then I painted the fox and the crow on top, and painted over the render too.
+
+The other two pages continue the story, but they aren't finished.
+
+I painted this fable once before, before my MA: [The Fox and the Crow](/PersonalProjects/02TheFoxAndTheCrow/thefoxandthecrow.html).
+---
+Blender, Photoshop
+---
+/Images/08MATheFoxAndTheCrow/Fox-And-Crow-Page-01-thumb.webp
+---
+thefoxandthecrow.html

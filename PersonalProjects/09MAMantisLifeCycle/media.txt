@@ -1,0 +1,10 @@
+/Images/09MAMantisLifeCycle/Mantis-Life-Cycle-Poster.webp
+The poster
+/Images/09MAMantisLifeCycle/Mantis-Stage-01.webp || /Images/09MAMantisLifeCycle/Mantis-Stage-02.webp
+The egg case | Hatching
+/Images/09MAMantisLifeCycle/Mantis-Stage-03.webp
+A young mantis
+/Images/09MAMantisLifeCycle/Mantis-Stage-04.webp
+The adult
+/Images/09MAMantisLifeCycle/Mantis-Stage-05.webp
+Laying a new egg case

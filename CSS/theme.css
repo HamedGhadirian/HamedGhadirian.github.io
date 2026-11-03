@@ -1,0 +1,23 @@
+/* theme.css — the site's colours and fonts, in one place.
+   Change a value here and every page follows. Every other CSS file uses these names. */
+:root {
+  /* Accent: links, highlights, the active tab */
+  --accent: #f5ba13;
+  --accent-hover: #edb049;   /* hover state; set to var(--accent) to use one orange everywhere */
+
+  /* Dark greys, darkest first */
+  --bg: #121212;             /* page background, buttons */
+  --panel: #151515;          /* area behind the grids and side panels */
+  --panel-2: #171717;        /* active navigation tab */
+  --card: #1e1e1e;           /* thumbnail placeholder while an image loads */
+  --card-2: #222222;         /* scrollbar, Read More button, tags */
+  --card-3: #272727;         /* hovered tags and buttons, quiet social icons */
+  --line: #2e2e2e;           /* thin divider lines */
+
+  /* Text */
+  --text: #d7d7d7;
+
+  /* Fonts */
+  --font-title: 'Poppins', sans-serif;
+  --font-body: Montserrat, sans-serif;
+}

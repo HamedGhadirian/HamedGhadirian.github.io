@@ -1,8 +1,8 @@
 The Fox And The Crow
 ---
-Link to wallpaper engine:
-https://steamcommunity.com/sharedfiles/filedetails/?id=2848558348
-I painted this digitally in photoshop and practices different lightings. I really like the night version so I brought it to blender and made an animation loop out it which also has a wallpaper engine version.
+I painted this digitally in Photoshop and tried it in different lighting. I liked the night version most, so I took it into Blender, split it into layers and animated them into a short loop. It also became a live wallpaper: [Wallpaper Engine version](https://steamcommunity.com/sharedfiles/filedetails/?id=2848558348).
+
+Later, I painted the same fable again as a children's book page for my MA: [MA: The Fox and the Crow](/PersonalProjects/08MATheFoxAndTheCrow/thefoxandthecrow.html).
 ---
 Blender, Photoshop
 ---

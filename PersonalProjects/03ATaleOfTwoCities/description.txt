@@ -1,6 +1,8 @@
 A Tale Of Two Cities
 ---
-After reading the Echoing Footsteps chapter from A Tale of Two Cities, I felt compelled to create an artwork inspired by it. I aimed for a middle-ground style that balances my stylized approach while staying true to the essence of the scene
+When I read the chapter "Echoing Footsteps" in A Tale of Two Cities, the storming of the Bastille stuck in my head, and I wanted to paint it. I used a 3D-to-2D workflow: I set up the camera, composition and perspective in Blender, then painted over it. I aimed for a middle-ground style, between my stylized approach and the feel of the scene.
+
+I made it before my MA in Illustration. I would paint it better today, but it was a fun piece to make.
 ---
 Blender, Photoshop
 ---

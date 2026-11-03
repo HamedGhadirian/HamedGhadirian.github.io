@@ -1,0 +1,13 @@
+Triangles:
+
+Materials:
+
+Texture Size:
+
+Texel Density:
+
+Workflow: Pencil on paper, scanned
+
+Target Engine:
+
+Collaborators:

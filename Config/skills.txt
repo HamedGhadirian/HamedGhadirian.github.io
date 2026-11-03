@@ -1,8 +1,15 @@
 3D Modelling
 Sculpting
-Texturing
-High Poly Modelling
-UV-Unwrapping
-Retopology
-Hand-painted Texturing
+Retopology & UVs
+Baking & Texturing
+LODs & Collision
 Environment Art
+Basic Rigging
+Blueprints (Prototypes & Tools)
+UI Design (UMG)
+Renders & Promo Videos
+2D Illustration
+Tool & Workflow Design
+Testing & Finding Problems
+Planning & Documentation
+Teamwork

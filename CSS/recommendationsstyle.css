@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 .recommendation-content {
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@
 }
 
 .recommendations-panel {
-    background-color: #121212;
+    background-color: var(--bg);
     border-radius: 5px;
     padding: 10px;
     flex: 1;
@@ -62,12 +63,12 @@
 .recommendation h2 {
     font-size: 20px;
     margin: 0;
-    color: #edb049;
+    color: var(--accent-hover);
 }
 
 .recommendation h3 {
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-title);
     font-weight: 400;
     margin: 0;
     color: grey;
@@ -75,7 +76,7 @@
 
 .recommendation-date {
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-title);
     font-weight: 400;
     margin: 5px 0;
     color: #444444;
@@ -104,7 +105,7 @@
 }
 
 .dot.active {
-    background-color: #f5ba13;
+    background-color: var(--accent);
 }
 
 @media (max-width: 600px) {

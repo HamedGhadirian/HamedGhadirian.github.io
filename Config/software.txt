@@ -1,6 +1,7 @@
 Blender
 Unreal Engine
-Zbrush
+ZBrush
+Substance 3D Painter
 Adobe Photoshop
-Substance 3d Painter
-Marmoset Toolbag
+Clip Studio Paint
+Unity (learning)

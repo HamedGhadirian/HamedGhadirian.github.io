@@ -1,18 +1,16 @@
 Stylized Dire and Radiant Package
 ---
-This package is available on Fab:
-https://www.fab.com/listings/9eb2b7b9-8335-44bb-b85e-789bb84bcdf3
---
-I created this environment with various references in mind, including my primary source of inspiration, Dota 2, as well as the many stylized environments found in modern games. I aimed to achieve a balance between top-down and third-person perspectives. The journey to completion was arduous, but I am thrilled with the final result.
---
--Number of Unique Meshes: 48
--Collision: (Yes, custom)
--LODs: (Yes, Auto)
--Number of Materials and Material Instances: 7 Material, 4 VFX Material, 84 Instance Material, 37 Material Instance for Demo (mostly use RVT)
--Number of Textures: 76
--Texture Resolutions: 1k and 2k
+A stylized environment pack for Unreal Engine 5 that I made and sold myself. My main inspiration was Dota 2, along with the stylized worlds of many modern games. I wanted the assets to work from both a top-down and a third-person camera.
+
+It was sold on the Unreal Marketplace and is now available on BlenderKit as two sets: [Stylized Dire](https://www.blenderkit.com/asset-gallery-detail/770f5fe2-47f2-4628-b48c-ac9e2612e84e/) and [Stylized Radiant](https://www.blenderkit.com/asset-gallery-detail/9c8a5519-33f2-45c5-98c2-ebb75605a792/). It took a long time, and today I can see a lot I would optimise. But it was my first full pack, and it taught me what a buyer needs: clean setup, collision, LODs and flexible materials.
+
+-Unique meshes: 48
+-Collision: yes, custom
+-LODs: yes, auto
+-Materials: 7 materials, 4 VFX materials, 84 material instances, plus 37 instances for the demo (mostly using RVT, a virtual texture that blends assets into the landscape)
+-Textures: 76, at 1k and 2k
 ---
-Blender, Zbrush, Substance Painter, UE5
+Blender, ZBrush, Substance Painter, UE5
 ---
 /Images/02StylizedDireandRadiantPackage/Thumbnail02-thumb.webp
 ---

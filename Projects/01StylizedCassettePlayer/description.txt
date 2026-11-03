@@ -1,8 +1,12 @@
 Stylized Cassette Player
 ---
-Animated and rigged stylized music cassette player from my sketch.
+My own design, from my sketch to the final piece: modelling, sculpting, texturing, rigging and a short animation. It's probably the best thing I've made so far.
+
+It started as a record player and ended up as a cassette player. While designing it, I kept imagining the world it belongs to: a slightly steampunk, sci-fi place, and how someone there would build and use a device like this. It was my first step into stylized, steampunk design.
+
+If I made it again today, I would change a lot. But I still love it.
 ---
-Blender, Zbrush, Substance Painter
+Blender, ZBrush, Substance Painter
 ---
 /Images/01StylizedCassettePlayer/Stylized-Cassette-Player-Thumbnail01-thumb.webp
 ---

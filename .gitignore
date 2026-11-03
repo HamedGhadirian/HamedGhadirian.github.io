@@ -1,0 +1,4 @@
+# Local editor and Claude settings: keep them off the public repo
+.claude/
+.vscode/
+.vs/

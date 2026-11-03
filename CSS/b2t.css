@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 .back-to-top-button {
     display: none; /* Initially hidden */
     position: fixed;
@@ -15,5 +16,5 @@
   }
   
   .back-to-top-button:hover {
-    background-color: #121212;
+    background-color: var(--bg);
   }

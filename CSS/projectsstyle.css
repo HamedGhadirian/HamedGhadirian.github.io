@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 /* General Reset */
 * {
   margin: 0;
@@ -7,9 +8,9 @@
 
 /* Body Styling */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #121212;
-  color: #d7d7d7;
+  font-family: var(--font-title);
+  background-color: var(--bg);
+  color: var(--text);
   height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
@@ -35,7 +36,7 @@ h1 {
 h2 {
   font-size: 16px;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-title);
   font-weight: 400;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
@@ -52,7 +53,7 @@ h3 {
 .media-container {
   position: relative;
   flex: 0 0 80%; /* Take up 80% of the width */
-  background-color: #151515;
+  background-color: var(--panel);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -74,7 +75,7 @@ h3 {
 }
 
 .media-container::-webkit-scrollbar-thumb {
-  background-color: #222222; /* Color of the scrollbar thumb */
+  background-color: var(--card-2); /* Color of the scrollbar thumb */
   border-radius: 2px; /* Roundness of the scrollbar thumb */
 }
 
@@ -117,7 +118,7 @@ h3 {
   color: white;
   -webkit-user-select: none; /* Standard property */
   user-select: none; /* Safari and iOS support */
-  color: #d7d7d7;
+  color: var(--text);
   font-weight: 400;
 }
 
@@ -130,7 +131,7 @@ h3 {
   font-size: 14px;
   margin: 0;
   color: grey;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-title);
   font-weight: 400;
   white-space: pre-wrap; /* Preserves line breaks and spaces */
   -webkit-user-select: none; /* Standard property */
@@ -196,8 +197,8 @@ hr {
 
 .link-button:hover {
   opacity: 1;
-  color: #f5ba13;
-  background-color: #272727;
+  color: var(--accent);
+  background-color: var(--card-3);
 }
 
 
@@ -292,4 +293,21 @@ hr {
   max-width: 95%;
   max-height: 95%;
   border-radius: 8px;
+}
+
+/* Post pages: the side panel ends with the social links only, pushed to its bottom */
+.info-container .top-container {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.info-container .profile-pic,
+.info-container .user-name-link,
+.info-container .user-info-panel h2,
+.info-container .user-location-container {
+  display: none;
+}
+
+.info-container hr + hr {
+  display: none;
 }

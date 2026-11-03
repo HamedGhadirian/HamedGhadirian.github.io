@@ -1,9 +1,13 @@
-Illustration Study (MA) - WIP
+MA: Other Studies
 ---
-Right now I'm studing master of illustration at university and these are my works and projects done for the classes.
+Smaller exercises from my MA in Illustration.
+
+A master study of Charles M. Schulz, the creator of Peanuts: I studied his style and made a new comic page of my own with it.
+
+And a splash exercise: turning random paint splashes into characters, and then into a story page.
 ---
-Photoshop, Blender
+Photoshop
 ---
-/Images/06IllustrationStudy(MA)-WIP/Charlie-In-Chocolate-Factory-CMYK-Frame01-V22-thumb.webp
+/Images/06IllustrationStudy(MA)-WIP/Ogre-On-Dragon01-thumb.webp
 ---
 illustrationstudy.html

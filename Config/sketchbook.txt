@@ -1,11 +1,6 @@
-
-
-/Images/Sketchbook/Sketchbook-01-Page008.webp
-/Images/Sketchbook/Sketchbook-01-Page007.webp
-/Images/Sketchbook/Sketchbook-01-Page005.webp
-/Images/Sketchbook/Sketchbook-01-Page006.webp
-/Images/Sketchbook/Sketchbook-01-Page004.webp
-/Images/Sketchbook/Sketchbook-01-Page003.webp
-/Images/Sketchbook/Sketchbook-01-Page002.webp
-/Images/Sketchbook/Sketchbook-01-Page001.webp
-/Images/Sketchbook/Sketchbook-01-Page000.webp
+/Images/Sketchbook/Sketchbook_01Page006.webp
+/Images/Sketchbook/Sketchbook_01Page005.webp
+/Images/Sketchbook/Sketchbook_01Page004.webp
+/Images/Sketchbook/Sketchbook_01Page003.webp
+/Images/Sketchbook/Sketchbook_01Page002.webp
+/Images/Sketchbook/Sketchbook_01Page001.webp

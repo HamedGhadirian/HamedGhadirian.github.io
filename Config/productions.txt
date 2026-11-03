@@ -1,10 +1,47 @@
-# Each production should be separated by three dashes (---)
-# When you add one then productions.js will automatically add it after saving
-# Format: Title, Company, Time, Thumbnail URL, Description 
-#---
-#Role
-#Company
-#Date (i.e 2020-present or 2016-2023)
-#https://productionimage.jpg 
-#Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales justo vitae lacinia ornare. Pellentesque commodo mollis velit, finibus malesuada elit bibendum ut. Mauris sit amet nisi ante. Ut commodo auctor lorem id elementum. Ut at arcu congue, dictum est a, egestas neque. Aenean ipsum ipsum, elementum sit amet vehicula eu, congue sit amet risus. Aliquam a sem ac eros feugiat blandit vestibulum non diam.
-#---
+# Each production is separated by a line with three dashes (---)
+# Format, one per line: Title, Company, Time, Thumbnail path ("none" for no image, "a || b" for several), then the description
+# Every description line becomes its own paragraph. "Link: Label | url" becomes a link button.
+---
+3D Artist
+Nepox Inc · Freelance, full-time, remote
+Apr 2024 – Feb 2026
+/Images/Experience/Nepox-Routers.webp
+A real-time 3D app for Android, made in Unreal Engine, that shows your home network and home security as a 3D house. I joined as the 3D artist, and over time I worked on the app's design too.
+I modelled about 80 devices, like phones, laptops and modems, with 226 colour and screen variants. They had to be brand-neutral: easy to recognise, with no real brand or logo, so each one needed its own simple design.
+I also built about 30 rooms that fit together into the app's isometric house. We redesigned the whole house around how the app works, not just how it looks: every room has placement tags, so the developer's system can put each device in the right spot.
+I designed and built the app's whole UI, including 3D data views like a speed test and a Wi-Fi analyzer. Each view went back and forth between me and the programmer. When a design was hard to explain, I made a simple Blueprint prototype to show how it reacts to live values.
+Setting up hundreds of variants by hand was slow, so I made Blueprint editor tools to edit them in bulk. I also made the marketing renders and promo videos, like the one in this picture.
+Link: nepox.com | https://nepox.com/
+Link: Nepox on LinkedIn | https://linkedin.com/company/nepox
+---
+3D Artist, self-published asset packs
+Unreal Marketplace, now on BlenderKit
+Jul 2023 – Apr 2024
+/Images/Experience/StylizedWeapons.webp
+Two packs I designed, made and sold. They used to be on the Unreal Marketplace; now they're only on BlenderKit. Making them taught me what a buyer needs from a pack: clean setup, clear naming, LODs, collision, and materials they can change.
+Stylized Middle Eastern Weapons: 14 weapons with Persian patterns that I designed and sketched myself. A second UV set lets buyers recolour parts in the engine.
+Link: See the weapons | Projects/03StylizedMiddleEasternWeapons/stylizedmiddleeasternweapons.html
+Stylized Dire and Radiant: an environment pack inspired by Dota 2, with 48 meshes, custom collision, LODs and 76 textures.
+Link: See the environment pack | Projects/02StylizedDireandRadiantPackage/stylizeddireandradiant.html
+---
+Indie Games with Friends
+Small team · side projects
+Part-time, ongoing
+/Images/Experience/PunchKing.webp || /Images/Experience/SquidGame.webp
+Our first game was Punch King, a multiplayer fight between small wooden toys in a room. I made the 3D assets and characters, rigged and animated them, and designed the main menu.
+Looking back, my models from then are rough: I didn't even know about sharp edges in Blender. But it's where I learned to make art that has to work inside a real game. Some of those props later became my Corner of the Room diorama.
+Link: Corner of the Room | PersonalProjects/01CornerOfTheRoom/corneroftheroom.html
+After Punch King, I worked on more of our games, mostly on the 3D side. Now we're in pre-production on a new one.
+Link: Punch King | https://sentinel-pi.itch.io/punch
+Link: Squid Game | https://sentinel-pi.itch.io/squid-game
+Link: Lord of the Rings: Moria | https://sentinel-pi.itch.io/lord-of-the-rings-moria
+Link: Traffic Headache | https://sentinel-pi.itch.io/traffic-headache
+Link: LavaSlime (Epic MegaJam 2021) | https://sentinel-pi.itch.io/lavaslime
+---
+Bachelor's Project: ORO
+BSc Computer Science, Islamic Azad University
+2023
+/Images/Experience/ORO.webp
+My first solo game: a small mobile game in Unreal Engine, made as my bachelor's project in Computer Science, with Android and Windows builds.
+It's rough. It's not optimised, and I only tested it on my own PC and phone. But it was the first time I took a whole game from an empty project to a build someone else could play, alone.
+Link: ORO on itch.io | https://hamedphixer.itch.io/oro

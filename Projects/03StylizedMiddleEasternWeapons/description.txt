@@ -1,23 +1,24 @@
 Stylized Middle Eastern Weapons
 ---
-This package is available on Fab:
-https://www.fab.com/listings/70e39b47-998e-429f-970c-3254c358430a
---
-The main point of this project was to add some old Persian and Middle Eastern patterns to my weapons and designs. I wanted to get some influence from my country's culture. I designed and made for both portfolio and market. All weapons have 2 UVs for some basic base color customizations. With a 16x grid mask, the second UV, and material layers, users can change hue and value, or add overlay color on different parts of the asset. For example, you can change the color of only the wood part of the one-handed axe but this method is not like an ID map so it's impossible to customize details that do not have separate UVs.
---
--One Handed Axe - 8k tris - 1 texture set
--Two Sided Axe - 6k Tris - 1 Texture set
--Halberd - 6k Tris - 1 Texture set
--Shield - 5k tris - 2 texture sets (front and back)
--Sword and Scabbard - 6k Tris - 2 Texture sets (1sword - 1scabbard)
--Dagger and Scabbard - 3.5k Tris - 1 Texture set
--Spear - 2k Tris - 1 Texture set
--Bow - 9k Tris - 1 Texture set
--Quiver and Arrow - 2k and 1k - 1 Texture set each
--2x Mace 2x Flail - 5k to 10k Tris - 2 Texture sets (heads and shafts)
--2x Staff - 2k to 4k Tris - 1 Texture set each
+A set of 14 stylized weapons with old Persian and Middle Eastern patterns. I wanted my country's culture in my work, so I designed and sketched every weapon and its patterns myself, then sculpted, textured and set them up in Unreal Engine. Pouya Abdollahi helped with the blockouts. The designs are stylized, and the materials sit between stylized and realistic.
+
+It was sold on the Unreal Marketplace and is now available on [BlenderKit](https://www.blenderkit.com/asset-gallery?query=order:-quality+author_id:38976) and [Sketchfab](https://sketchfab.com/PhixerArt).
+
+Every weapon has a second UV set for colour customisation. With a 16x grid mask, the second UV and material layers, buyers can change the hue and value of each part, or add an overlay colour. For example, you can recolour only the wood of the one-handed axe. It isn't an ID map, though, so parts that don't have their own UV area can't be changed separately.
+
+-One-handed axe: 8k tris, 1 texture set
+-Two-sided axe: 6k tris, 1 texture set
+-Halberd: 6k tris, 1 texture set
+-Shield: 5k tris, 2 texture sets (front and back)
+-Sword and scabbard: 6k tris, 2 texture sets
+-Dagger and scabbard: 3.5k tris, 1 texture set
+-Spear: 2k tris, 1 texture set
+-Bow: 9k tris, 1 texture set
+-Quiver and arrow: 2k and 1k tris, 1 texture set each
+-2 maces and 2 flails: 5k to 10k tris, 2 texture sets (heads and shafts)
+-2 staffs: 2k to 4k tris, 1 texture set each
 ---
-Blender, Zbrush, Substance Painter, UE5
+Blender, ZBrush, Substance Painter, UE5
 ---
 /Images/03StylizedMiddleEasternWeapons/Thumbnail-thumb.webp
 ---

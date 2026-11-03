@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 /* Basic reset for margin and padding */
 html, body {
     margin: 0;
@@ -12,9 +13,9 @@ html, body {
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    background-color: #121212;
-    color: #d7d7d7;
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text);
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full viewport height */
@@ -50,7 +51,7 @@ h2 {
     font-size: 16px;
     margin: 0;
     color: grey;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-title);
     font-weight: 400;
     -webkit-user-select: none; /* Safari */
     user-select: none;
@@ -63,7 +64,7 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     padding-top: 10px;
-    border-bottom: 1px solid #2e2e2e;
+    border-bottom: 1px solid var(--line);
 }
 
 hr {
@@ -76,7 +77,7 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #151515;
+    background-color: var(--panel);
     width: 100%;
     gap: 10px;
     border-radius: 5px;
@@ -90,7 +91,7 @@ hr {
 .panel-title {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #d7d7d7;
+    color: var(--text);
     text-align: left; /* Align panel titles to the left */
 }
 
@@ -104,6 +105,24 @@ p {
     text-align: justify;
 }
 
+.summary-panel strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* Quiet links: same colour as the text, a faint dotted line, gold only on hover */
+.summary-panel a {
+    color: inherit;
+    text-decoration: underline dotted;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 3px;
+}
+
+.summary-panel a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+}
+
 .navigation-buttons {
     display: flex;
     gap: 1rem;
@@ -115,7 +134,7 @@ p {
     background-color: inherit;
     border: none;
     color: grey;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-title);
     text-decoration: none;
     cursor: pointer;
     padding: 10px;
@@ -126,8 +145,8 @@ p {
 }
 
 .nav-button.active, .nav-button:hover {
-    background-color: #171717;
-    color: #f5ba13;
+    background-color: var(--panel-2);
+    color: var(--accent);
 }
 
 @media (max-width: 600px) {
@@ -147,7 +166,7 @@ p {
 
     .top-container {
         padding-top: 10px;
-        border-bottom: 1px solid #2e2e2e;
+        border-bottom: 1px solid var(--line);
     }
 
     .bottom-container {

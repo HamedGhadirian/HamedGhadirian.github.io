@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamed Ghadirian About</title>
-    <link rel="stylesheet" href="../CSS/aboutstyle.css" />
-    <link rel="stylesheet" href="../CSS/userinformationstyle.css" />
-    <link rel="stylesheet" href="../CSS/softwareskillsstyle.css" />
-    <!--<link rel="stylesheet" href="../CSS/recommendationsstyle.css" />  -->
-    <link rel="stylesheet" href="../CSS/productionsstyle.css" />
+    <link rel="stylesheet" href="/CSS/aboutstyle.css" />
+    <link rel="stylesheet" href="/CSS/userinformationstyle.css" />
+    <link rel="stylesheet" href="/CSS/softwareskillsstyle.css" />
+    <!--<link rel="stylesheet" href="/CSS/recommendationsstyle.css" />  -->
+    <link rel="stylesheet" href="/CSS/productionsstyle.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="icon" href="../../Resources/favicon/PhixerArtLogo.png" type="image/png"/>
+    <link rel="icon" href="/Resources/favicon/PhixerArtLogo.png" type="image/png"/>
   </head>
   <body>
     <div class="top-container">
@@ -38,7 +38,7 @@
     </div>
     <div class="bottom-container">
       <div class="horizontal-container">
-        <h1 class="panel-title">Summary</h1>
+        <h1 class="panel-title">About Me</h1>
         <div class="summary-panel">
           <p><!-- Summary will be dynamically inserted here --></p>
         </div>
@@ -75,22 +75,10 @@
         <!-- Production cards will be added here -->
       </div>
     </div>
-    <script src="../JS/summary.js"></script>
-    <script src="../JS/skills.js"></script>
-    <script src="../JS/userinformation.js"></script>
-    <script src="../JS/recommendations.js"></script>
-    <script src="../JS/productions.js"></script>
-    <script>
-      // JavaScript to add 'active' class to the current page's navigation button
-      document.addEventListener("DOMContentLoaded", function () {
-        const currentPath = window.location.pathname.split("/").pop();
-        const navButtons = document.querySelectorAll(".nav-button");
-        navButtons.forEach((button) => {
-          if (button.getAttribute("href") === currentPath) {
-            button.classList.add("active");
-          }
-        });
-      });
-    </script>
+    <script src="/JS/summary.js"></script>
+    <script src="/JS/skills.js"></script>
+    <script src="/JS/userinformation.js"></script>
+    <script src="/JS/productions.js"></script>
+    <script src="/JS/nav.js"></script>
   </body>
 </html>

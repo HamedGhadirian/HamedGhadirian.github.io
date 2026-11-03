@@ -1,3 +1,4 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 .project-stats-container {
   padding: 10px;
 }
@@ -35,7 +36,7 @@
 }
 
 .stat-info-icon:hover {
-  color: #f5ba13;
+  color: var(--accent);
 }
 
 .tooltip {

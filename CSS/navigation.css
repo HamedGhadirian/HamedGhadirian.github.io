@@ -1,5 +1,6 @@
+@import url('theme.css'); /* colours and fonts; must stay the first line */
 .nav-button {
-  background-color: #121212;
+  background-color: var(--bg);
   border: none;
   border-radius: 0.1em;
   color: white;

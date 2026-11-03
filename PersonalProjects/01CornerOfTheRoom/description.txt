@@ -1,6 +1,8 @@
 Corner Of The Room
 ---
-This was my first 3D project, where I created all the assets for a student game which small wooden characters fight in a small room. I later developed it into a personal project to practice lighting and design, focusing on a diorama with a nostalgic 90s vibe.
+This is where I started. I first made these props for [Punch King](https://sentinel-pi.itch.io/punch), the first game I made with my friends, where small wooden characters fight in a room. Then I kept adding to them and turned them into a small diorama: a nostalgic 90s corner of a room, with a Walkman and a lot of love for Toy Story. I used it to practise lighting and design.
+
+Looking at it today, I can see what I didn't know yet. The UVs and shading are rough. And the room is too clean: real rooms have dust, scratches and wear, and this one has none. I keep it here because I still love it, and because it shows where I began.
 ---
 Blender, UE5, Substance Painter
 ---
